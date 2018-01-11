@@ -9,50 +9,42 @@ import com.leonel.dao.IMarcaDAO;
 import com.leonel.model.Marca;
 
 @Service
-public class MarcaService implements IMarcaService{
-	
-	IMarcaDAO dao;
+public class MarcaService implements IMarcaService {
 
 	@Autowired
-	public void setDao(IMarcaDAO dao) {
-		this.dao = dao;
-	}
+	IMarcaDAO dao;
 
 	public List<Marca> getAllMarcas() {
-		
+
 		return dao.getAllMarcas();
 	}
 
 	@Override
 	public void addMarca(Marca marca) {
-		// TODO Auto-generated method stub
-		
+		dao.addMarca(marca);
+
 	}
 
 	@Override
 	public void updateMarca(Marca marca) {
-		// TODO Auto-generated method stub
-		
+		dao.updateMarca(marca);
+
 	}
 
 	@Override
 	public void deleteMarca(int id) {
-		// TODO Auto-generated method stub
-		
+		dao.deleteMarca(id);
+
 	}
 
 	@Override
 	public Marca findMarcaByName(String nombre) {
-		// TODO Auto-generated method stub
-		return null;
+		return dao.findMarcaByName(nombre);
 	}
 
 	@Override
 	public Marca findMarcaByID(int id) {
-		// TODO Auto-generated method stub
-		return null;
+		return dao.findMarcaByID(id);
 	}
-
-
 
 }

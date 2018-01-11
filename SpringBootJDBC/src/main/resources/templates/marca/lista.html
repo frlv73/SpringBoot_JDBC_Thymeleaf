@@ -12,10 +12,12 @@
 		<tr>
 			<th>ID</th>
 			<th>Nombre</th>
+			<th>Detalle</th>
 		</tr>
 		<tr th:each="marca : ${listaMarcas}">
 			<td th:text="${marca.id}"></td>
 			<td th:text="${marca.nombre}"></td>
+			<td><a th:href="@{'/marca/detalle/' + ${marca.id}}">Ver Detalle</a></td>
 		</tr>
 
 	</table>
