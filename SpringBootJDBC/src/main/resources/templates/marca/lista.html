@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-<meta charset="ISO-8859-1" />
-<title>Marcas</title>
+<head th:replace="template :: head">
+
 </head>
 <body>
 
@@ -21,6 +20,11 @@
 		</tr>
 
 	</table>
+	
+	<a th:href="@{marca/agregar}" >Agregar Marca</a> <br />
+	<a th:href="@{/index}" >Ir a Index</a>
+	
+	<div th:replace="template :: footer"></div>
 
 </body>
 </html>

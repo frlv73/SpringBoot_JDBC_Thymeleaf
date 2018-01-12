@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="template :: head">
+
+</head>
+<body>
+
+	<h3>Agregar Marca</h3>
+
+	<form method="POST">
+		<label>ID: </label> <input type="text" name="txtID"></input> <br /> <br />
+		<label>Nombre: </label> <input type="text" name="txtNombre"></input><br />
+		<br /> <input type="submit" value="Agregar" />
+	</form>
+	<br />
+	<br />
+
+	<div th:replace="template :: footer"></div>
+
+</body>
+</html>

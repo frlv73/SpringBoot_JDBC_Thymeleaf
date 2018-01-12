@@ -6,7 +6,6 @@
 	<groupId>com.leonel</groupId>
 	<artifactId>SpringBootJDBC</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
 
 	<name>SpringBootJDBC</name>
 	<description>Proyecto con Spring, JDBC Template y Thymeleaf</description>
