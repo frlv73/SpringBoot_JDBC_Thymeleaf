@@ -17,6 +17,7 @@
 			<td th:text="${marca.id}"></td>
 			<td th:text="${marca.nombre}"></td>
 			<td><a th:href="@{'/marca/detalle/' + ${marca.id}}">Ver Detalle</a></td>
+			<td><a th:href="@{'/marca/modificar/' + ${marca.id}}">Modificar</a></td>
 		</tr>
 
 	</table>
